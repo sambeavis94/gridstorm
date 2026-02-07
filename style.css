@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 12px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* SETUP */
+#setup-screen {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #020617;
+  border-radius: 16px;
+}
+
+#setup-screen select,
+#setup-screen input,
+#setup-screen button {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+/* LAYOUT */
+#layout {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* BOARD */
+#board {
+  display: grid;
+  grid-template-columns: 50px repeat(5, 110px);
+  grid-template-rows: 50px repeat(5, 110px);
+  gap: 10px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.tile {
+  background: #1e293b;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile.revealed {
+  background: #334155;
+}
+
+/* SIDEBAR */
+aside {
+  width: 240px;
+  text-align: left;
+}
+
+/* QUESTION BAR */
+#question-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  background: #020617;
+  border-top: 2px solid #1e293b;
+}
+
+/* TEACHER */
+#teacher {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background: #020617;
+  padding: 12px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+#teacher button {
+  width: 100%;
+  margin: 5px 0;
+}

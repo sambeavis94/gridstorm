@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gridstorm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>⚡ GRIDSTORM</h1>
+
+<!-- SETUP SCREEN -->
+<div id="setup-screen">
+  <h2>Welcome to Gridstorm</h2>
+  <p>
+    Choose a grid square, answer questions, and score points.<br>
+    Beware the tornado 🌪️ — it wipes your score.
+  </p>
+
+  <h3>Number of Teams</h3>
+  <select id="team-count">
+    <option value="2">2 Teams</option>
+    <option value="3">3 Teams</option>
+    <option value="4" selected>4 Teams</option>
+    <option value="5">5 Teams</option>
+    <option value="6">6 Teams</option>
+  </select>
+
+  <h3>Team Names</h3>
+  <div id="team-inputs"></div>
+
+  <button id="start-game">Start Game</button>
+</div>
+
+<!-- MAIN GAME -->
+<div id="layout" class="hidden">
+
+  <!-- BOARD -->
+  <div id="board">
+    <div class="label"></div>
+    <div class="label">1</div><div class="label">2</div><div class="label">3</div><div class="label">4</div><div class="label">5</div>
+
+    <div class="label">A</div>
+    <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+
+    <div class="label">B</div>
+    <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+
+    <div class="label">C</div>
+    <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+
+    <div class="label">D</div>
+    <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+
+    <div class="label">E</div>
+    <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <h2>Scores</h2>
+    <ul id="teams"></ul>
+
+    <h3>Key</h3>
+    <ul id="icon-key">
+      <li>❓ Question</li>
+      <li>✖️2 Double Points</li>
+      <li>🏴‍☠️ Steal 5 Points</li>
+      <li>⛔ Block a Team</li>
+      <li>🔄 Swap Scores</li>
+      <li>🧗 Challenge</li>
+      <li>🌪️ Tornado (Lose All)</li>
+    </ul>
+  </aside>
+</div>
+
+<!-- QUESTION BAR -->
+<div id="question-bar" class="hidden">
+  <strong id="question-category"></strong>:
+  <span id="question-text"></span>
+  <span id="answer-text" class="hidden"></span>
+  <button id="reveal-answer">Reveal Answer</button>
+</div>
+
+<!-- TEACHER CONTROLS -->
+<div id="teacher">
+  <div id="turn"></div>
+  <button id="new">New Game</button>
+  <button id="correct">Correct +5</button>
+  <button id="double">Double +10</button>
+  <button id="end">End Turn</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

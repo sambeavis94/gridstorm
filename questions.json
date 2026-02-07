@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Geography",
+    "question": "What is the capital of Peru?",
+    "answer": "Lima"
+  },
+  {
+    "category": "Science",
+    "question": "What planet is known as the Red Planet?",
+    "answer": "Mars"
+  },
+  {
+    "category": "History",
+    "question": "Who was the first President of the United States?",
+    "answer": "George Washington"
+  },
+  {
+    "category": "Sport",
+    "question": "How many players are on a soccer team?",
+    "answer": "11"
+  },
+  {
+    "category": "Music",
+    "question": "Who sang the song Thriller?",
+    "answer": "Michael Jackson"
+  }
+]
